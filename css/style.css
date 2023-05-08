@@ -1,0 +1,367 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.trello {
+  width: 80%;
+  margin: auto;
+  background: whitesmoke;
+  position: relative;
+}
+.personal__modal {
+  position: absolute;
+  width: 100%;
+  min-height: 115%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 10000;
+}
+
+.hide {
+  display: none !important;
+}
+
+.personal__info {
+  width: 400px;
+  height: 400px;
+  background-color: rgba(255, 255, 255, 0.8);
+  top: 35px;
+  margin: auto;
+  margin-top: 50px;
+  border-radius: 25px;
+}
+
+.personal__info > span:nth-child(1) {
+  font-size: 24px;
+  margin: 15px;
+  color: red;
+}
+.personal__info > input:nth-child(3) {
+  width: 100%;
+}
+
+.personal__infoInformation {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.personal__infoInformation > span {
+  font-size: 24px;
+  line-height: 40px;
+  padding-left: 82px;
+  padding-bottom: 10px;
+}
+
+.personal__infoInformationCancelBtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-weight: 700;
+  font-size: 20px;
+  cursor: pointer;
+}
+.input__file {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+}
+
+.input__fileButton {
+  max-width: 235px;
+  height: 40px;
+  background: #73c8b2;
+  color: #fff;
+  font-size: 1.125rem;
+  font-weight: 700;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  border-radius: 3px;
+  cursor: pointer;
+  margin: 0 auto;
+}
+
+.input__fileIconWrapper {
+  height: 40px;
+  width: 60px;
+  margin-right: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-right: 1px solid #fff;
+}
+
+.input__fileIcon {
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+}
+
+.personal__newWorker {
+  margin-left: 83px;
+  width: 98px;
+  border: 2px solid #ffffff;
+  border-radius: 4px;
+  outline: none;
+  padding: 4px 10px;
+}
+
+.personal__newWorker:focus {
+  border: 2px solid #73c8b2;
+  box-shadow: 0 0 8px 0 #73c8b2;
+}
+
+.personal__btn {
+  cursor: pointer;
+  padding: 5px 15px;
+  margin-left: 24px;
+  border-radius: 4px;
+  border: 2px solid #73c8b2;
+}
+
+.personsNewData {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#display_image {
+  border-radius: 50%;
+  height: 120px;
+  width: 120px;
+  background-size: 120px !important;
+  margin-top: 20px;
+}
+
+.personal__infoApprove {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+  bottom: 20px;
+}
+
+.personal__approveBtn {
+  cursor: pointer;
+  padding: 8px 40px;
+  border-radius: 18px;
+  border: 3px solid #73c8b2;
+  margin: auto;
+}
+
+.trello__header {
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  background-image: url(../img/bg_header.jpg);
+}
+
+.personal__header {
+  display: flex;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 14px;
+  height: 48px;
+  justify-content: center;
+  align-items: center;
+}
+
+.trello__btn {
+  height: 34px;
+  border-radius: 10px;
+  padding: 0 10px;
+  cursor: pointer;
+}
+
+.personal {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 35px;
+  margin-right: 50px;
+}
+.personal > :nth-child(1) {
+  color: white;
+  font-weight: 700;
+  padding-left: 15px;
+}
+
+.pesonal__items {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  background: transparent;
+  text-align: center;
+  line-height: 32px;
+  font-weight: 700;
+  margin-left: 15px;
+  position: relative;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.personal__first {
+  background-image: url("../img/person1.png");
+  background-size: 35px;
+}
+
+.personal__second {
+  background-image: url("../img/person2.png");
+  background-size: 35px;
+}
+
+.personal__thirt {
+  background-image: url("../img/person3.png");
+  background-size: 35px;
+}
+.personName {
+  position: absolute;
+  font-size: large;
+  color: transparent;
+  font-weight: 700;
+}
+
+.personal__newBtn {
+  height: 40px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.trello__body {
+  display: flex;
+  justify-content: space-between;
+  background-image: url(../img/bg.jpg);
+}
+
+.trello__sprint,
+.trello__progress,
+.trello__review,
+.trello__done {
+  background-color: #ebecf0;
+}
+
+#sprit,
+#progress,
+#review,
+#done {
+  text-align: center;
+  padding: 10px 0px;
+  font-size: 30px;
+  font-weight: 900;
+  color: whitesmoke;
+}
+
+.trello__task {
+  margin-bottom: 15px;
+  padding-bottom: 30px;
+  width: 220px;
+  margin: auto;
+  background-color: white;
+  border-radius: 3px;
+}
+
+.trello__taskHeader {
+  display: flex;
+  cursor: pointer;
+}
+
+.trello__text {
+  width: 225px;
+  padding: 15px 10px;
+}
+
+.trello__removeTaskBtn {
+  z-index: 1;
+  top: 0;
+  width: 100%;
+}
+
+.trello__personsExecutor {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.trello__persons {
+  padding-left: 10px;
+  cursor: pointer;
+}
+
+.trello__body > div {
+  width: 250px;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.trello__task:hover {
+  background-color: black;
+  color: white;
+  transition: 3s;
+}
+
+.trello__task {
+  border-radius: 15px;
+  position: relative;
+  z-index: 10;
+  margin-bottom: 10px;
+}
+
+.new__ImagesPerson {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  background-size: 35px;
+  margin-left: 15px;
+  position: relative;
+  background-size: 35px !important;
+}
+
+.trello__removeTaskBtn {
+  width: 14px;
+  color: red;
+  font-size: 17px;
+  font-weight: 700;
+  margin-top: 5px;
+  height: 17px;
+  margin-right: 9px;
+  cursor: pointer;
+}
+
+input {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  outline: none;
+  margin-right: 10px;
+  height: 30px;
+  border-radius: 10px;
+  cursor: pointer;
+  padding-left: 10px;
+}
+
+::-webkit-input-placeholder {
+  color: white;
+}
+
+.trello__task:hover .personName {
+  bottom: -25px;
+  color: white !important;
+  transition: 2.5s;
+  transition-duration: 2s;
+}

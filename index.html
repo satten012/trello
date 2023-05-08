@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="trello">
+        <div class="personal__modal hide">
+            <div class="personal__info">
+                <div class="personal__infoInformation">
+                    <span>Choose a profile picture:</span>
+                    <div class="personal__infoInformationCancelBtn">X</div><br>
+                    <input name="file" type="file" id="input__file" class="input__file" accept=".png, .jpg, .jpeg">
+                    <label for="input__file" class="input__fileButton">
+                        <span class="input__fileIconWrapper"><img class="input__fileIcon" src="./img/icon.png"
+                                alt="Choose File" width="25"></span>
+                        <span class="input__fileButtonText">Choose file</span>
+                    </label>
+                    <span>Choose a profile picture:</span><br>
+                    <input type="text" class="personal__newWorker" placeholder="name of personal">
+                    <button class="personal__btn">Add colleague</button>
+                    <div class="personsNewData ">
+                        <div id="display_image"></div>
+                        <div id="newNamePersonalCreate"></div>
+                    </div>
+                    <div class="personal__infoApprove">
+                        <button class="personal__approveBtn">Approve</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="trello__header">
+            <div>
+                <input type="text" class="trello__inp"><button class="trello__btn">Add task</button>
+            </div>
+            <div class="personal__header">
+                <div class="personal" draggable="true">
+                    <div>Исполнители:</div>
+                    <div class="pesonal__items personal__first" draggable="true" contenteditable="false">
+                        <div class="personName">Ella</div>
+                    </div>
+                    <div class="pesonal__items personal__second" draggable="true" contenteditable="false">
+                        <div class="personName">Ella</div>
+                    </div>
+                    <div class="pesonal__items personal__thirt" draggable="true" contenteditable="false">
+                        <div class="personName">Ella</div>
+                    </div>
+                </div>
+                <div class="personal__new">
+                    <button class="personal__newBtn">Add new employee</button>
+
+                </div>
+            </div>
+        </div>
+        <div class="trello__body">
+            <div class="trello__sprint">
+                <div id="sprit">Sprint</div>
+                <div class="trello__task" draggable="true" contenteditable="true">
+                    <div class="trello__taskHeader">
+                        <div class="trello__text">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam incidunt iusto atque ipsam
+                            ullam
+                            sint obcaecati corporis nobis, ea, perspiciatis ducimus expedita enim quo molestiae
+                            accusantium
+                            suscipit laborum dignissimos illo!</div>
+                        <span class="trello__removeTaskBtn" contenteditable="false">X</span>
+                    </div>
+                    <div class="trello__persons" contenteditable="false">Executor</div>
+                    <div class="trello__personsExecutor"> </div>
+                </div>
+                <div class="trello__task" draggable="true" contenteditable="true">
+                    <div class="trello__taskHeader">
+                        <div class="trello__text">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam incidunt iusto atque ipsam
+                            ullam
+                            sint obcaecati corporis nobis, ea, perspiciatis ducimus expedita enim quo molestiae
+                            accusantium
+                            suscipit laborum dignissimos illo!</div>
+                        <span class="trello__removeTaskBtn" contenteditable="false">X</span>
+                    </div>
+                    <div class="trello__persons" contenteditable="false">Executor</div>
+                    <div class="trello__personsExecutor"> </div>
+
+
+
+                </div>
+            </div>
+            <div class="trello__progress">
+                <div id="progress">In progress</div>
+            </div>
+            <div class="trello__review">
+                <div id="review">Review</div>
+            </div>
+            <div class="trello__done">
+                <div id="done">done</div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
